@@ -54,10 +54,7 @@ header a {
   padding-right: 40px;
 }
 header a:hover {
-  width: 76px;
-  height: 31px;
   background-color: #643a79;
-  border: 1px solid #643a79;
   border-radius: 3px;
 }
 header button {
