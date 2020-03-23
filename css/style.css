@@ -66,7 +66,7 @@ header button {
   background-color: #eb7d4b;
   border: 1px solid #eb7d4b;
   border-radius: 3px;
-  font-family: "Titillium Web-Semi Bold";
+  font-family: "Titillium Web-Semi Bold" sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 26.19px;
