@@ -1,4 +1,3 @@
-
 body {
   padding: 0;
   margin: 0;
@@ -457,3 +456,107 @@ button:hover {
   vertical-align: top;
   margin: 0 10px;
 }
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 220px;margin-right: 220px;
+  padding-bottom: 122px;
+  padding-top: 84px;
+}
+
+.single-chart {
+  width: 15%;
+}
+.single-chart h2{
+  text-align: center;
+  color: #3c4761;
+  font-family: "Titillium Web";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #eb7d4b;
+}
+
+.circular-chart.green .circle {
+  stroke: #15c7a8;
+}
+
+.circular-chart.blue .circle {
+  stroke: #30bae7;
+}
+
+.circular-chart.red .circle {
+  stroke: #d74680;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.skills{
+  height: auto;
+  width: auto;
+}
+
+.skills h1{
+  color: #3c4761;
+  font-family: "Titillium Web";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 29.91px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 117px;
+}
+
+.skills hr {
+  width: 87px;
+  height: 4px;
+  border: none;
+  background-color: #dfe8ed;
+}
+
+.skills p{
+  width: 568px;
+  height: 45px;
+  color: #3c4761;
+  font-family: "Titillium Web";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  margin: auto;
+  padding-top: 23px;
+  }
