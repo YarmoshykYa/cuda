@@ -27,37 +27,61 @@ body {
 
 /* Colors */
 /* Section-header */
-header {
-  height: 596px;
-  width: auto;
+header{
   background-color: #87509c;
+
 }
-header .logo {
-  display: inline-block;
-  padding-top: 57px;
-  padding-left: 212px;
-  width: 117px;
-  height: 37px;
-}
-header .home-link {
-  margin-left: 483px;
-}
-header a {
-  color: #ffffff;
-  width: 416px;
-  height: 13px;
+header a{
+  text-decoration: none;
   font-family: "Titillium Web";
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  text-decoration: none;
-  padding-left: 40px;
-  padding-right: 40px;
+  color: #ffffff;
 }
 header a:hover {
   background-color: #643a79;
   border-radius: 3px;
+}
+.logo{
+  display: inline-block;
+}
+.flex-nav-header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 57px;
+  margin-left: 212px;
+  margin-right: 195px;
+}
+.menu-header{
+  list-style: none;
+}
+.menu-header .active{
+  background-color: #643a79;
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.menu-items-header{
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+.menu-items-header:hover{
+  background-color: #643a79;
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 header button {
   width: 293px;
@@ -99,10 +123,15 @@ button:hover {
 }
 .services {
   margin-top: -2.1rem;
-  height: auto;
-  width: auto;
   background-color: #17c2a4;
   text-align: center;
+}
+.flex-services{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-left: 204px;margin-right: 204px;
+  align-items: center;
 }
 .services img {
   max-width: 70%;
@@ -113,7 +142,6 @@ button:hover {
   font-family: "Titillium Web";
   font-size: 40px;
   font-weight: 700;
-  line-height: 29.91px;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 4px;
@@ -125,16 +153,17 @@ button:hover {
   line-height: 26px;
   color: #ffffff;
   letter-spacing: 0.36px;
+  margin-top: 0;
 }
 .services h2 {
   font-family: "Titillium Web";
   font-size: 24px;
   font-weight: 700;
-  line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 0.48px;
   color: #ffffff;
   padding-top: 60px;
+  margin-bottom: 0;
 }
 .services hr {
   width: 87px;
@@ -148,11 +177,7 @@ button:hover {
   width: 192px;
   height: 295px;
   padding-top: 83px;
-  padding-left: 146px;
   padding-bottom: 128px;
-}
-.servs-img {
-  padding-left: 0;
 }
 .reviews {
   background-color: #d74680;
@@ -178,9 +203,6 @@ button:hover {
   padding-top: 48px;
   padding-bottom: 0;
 }
-.reviews-text {
-  display: inline-flex;
-}
 .reviews hr {
   width: 87px;
   height: 4px;
@@ -193,10 +215,49 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 171px;
+  margin-right: 171px;
 }
-.flex-container img {
+.flex-element{
+  max-width: 524px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-element img{
+  width: 96px;
+  height: 96px;
+}
+.flex-element p{
+  max-width: 368px;
+  color: #ffffff;
+  font-family: "Titillium Web";
+  font-size: 21px;
+  line-height: 31.2px;
+  font-style: italic;
+}
+.flex-element h2{
+  margin-left: 156px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #ffffff;
+  font-family: "Titillium Web";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.flex-element h3{
+  margin-left: 156px;
+  margin-top: 0;
+  color: #ffdd99;
+  font-family: "Titillium Web";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 129px;
+}
+/* .flex-container img {
   padding-right: 48px;
   float: left;
 }
@@ -239,7 +300,7 @@ button:hover {
   margin-left: 117px;
   padding-top: 158px;
   margin-bottom: 129px;
-}
+} */
 .git {
   height: auto;
   margin-top: -2.1rem;
@@ -675,4 +736,71 @@ button:hover {
   margin: 0;
   padding: 0;
   color: #ffffff;
+}
+@media (max-width: 1010px){
+  .flex-nav-header{
+    margin-left: 112px;
+    margin-right: 95px;
+  }
+  .flex-services{
+    margin: 104px;
+  }
+  .serv-img-1{
+    margin-right: 200px;
+  }
+}
+@media(max-width: 1500px){
+  .flex-element{
+    display: flex;
+    margin-right: auto; margin-left: auto;
+  }
+}
+@media (max-width: 1199px){
+  .flex-services{
+    margin: 104px;
+  }
+}
+@media (max-width: 991px){
+  .flex-nav-header{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;margin-right: 0;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .header-title{
+    margin-top: 56px;
+  }
+}
+@media(max-width:809px){
+  .serv-img-1{
+    margin-right: 100px;
+  }
+}
+@media (max-width: 767px){
+  .menu-header{
+    padding: 0;
+  }
+  .menu-items-header{
+    display: flex;
+    justify-content: center;
+    padding: 10px 17px;
+    border-radius: 3px;
+    margin-left: 0;
+  }
+  .serv-img-1{
+    margin-right: 0;
+  }
+  .flex-services{
+    margin: 104px;
+    flex-direction: column;
+  }
+  .flex-element p{
+    display: flex;
+    margin: auto;
+  }
 }
